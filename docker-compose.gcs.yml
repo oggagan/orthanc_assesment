@@ -1,0 +1,15 @@
+# Override to run middleware with GCS storage. Use:
+#   docker-compose -f docker-compose.yml -f docker-compose.gcs.yml up
+# Set GCS_BUCKET in the environment (e.g. export GCS_BUCKET=your-bucket).
+# Ensure creds.json exists (not in repo) and has a service account with Storage Object Creator on the bucket.
+
+services:
+  middleware:
+    environment:
+      STORAGE_BACKEND: gcs
+      GCS_BUCKET: ${GCS_BUCKET}
+      GCS_PROJECT: ${GCS_PROJECT:-}
+      GCS_UPLOAD_TIMEOUT_SECONDS: ${GCS_UPLOAD_TIMEOUT_SECONDS:-60}
+      GOOGLE_APPLICATION_CREDENTIALS: /app/creds.json
+    volumes:
+      - ./creds.json:/app/creds.json:ro

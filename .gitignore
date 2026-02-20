@@ -1,0 +1,95 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Environment and secrets (never commit)
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+.env.test
+*.pem
+creds.json
+keys/
+keys/*.json
+*.credentials.json
+*.key
+secrets/
+
+# IDE and editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*.sublime-*
+
+# Raw DICOM storage (local data, do not commit)
+storage/
+/data/dicom
+
+# Testing and coverage
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+.tox/
+.mypy_cache/
+nosetests.xml
+coverage.xml
+*.cover
+
+# Logs and temp output
+*.log
+logs/
+verification_results.log
+kafka_consumed.txt
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# OS
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Load test generated output (optional: keep README, ignore CSVs)
+load_test/results/*.csv
+load_test/results/*.json
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Local / machine-specific
+.cursor/
+
+# Docker local overrides with secrets (if you add any)
+docker-compose.override.yml
+docker-compose.*.local.yml

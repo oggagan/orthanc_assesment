@@ -1,0 +1,12 @@
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+pydicom>=2.4.0
+httpx>=0.26.0
+sqlalchemy[asyncio]>=2.0.0
+asyncpg>=0.29.0
+aiokafka>=0.10.0
+structlog>=24.1.0
+prometheus-client>=0.19.0
+pydantic>=2.5.0
+pydantic-settings>=2.1.0
+google-cloud-storage>=2.14.0
